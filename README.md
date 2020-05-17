@@ -1,3 +1,18 @@
+TO DO LIST
+
+RandomCountry
+Get random country from api.
+Create list.
+Select Country.
+Get country covid data.
+
+CountryInput
+Create select with autocomplete.
+Get country name from api.
+Select Country.
+Get country covid data.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
