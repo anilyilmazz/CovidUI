@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
+import { connect } from "react-redux"
 import './App.css';
+import RandomCountry from './Components/RandomCountry/RandomCountry.js'
+import CountryInput from './Components/CountryInput/CountryInput.js'
+import { setRandom, setSelect } from "./redux/actions/appactions"
 
-function App() {
+function App({ showRandom, showSelect, setRandom, setSelect }) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <section className="selectDiv">
+        <button className="btn btn-primary" onClick={setRandom}>Search With Input</button> &nbsp;
+        <button className="btn btn-success" onClick={setSelect}>Random Country</button>
+      </section>
+      {showRandom ? <RandomCountry />: null}
+      {showSelect ? <CountryInput /> : null}         
     </div>
   );
 }
-
-export default App;
+const mapStateToProps = ({ appState : {showRandom, showSelect} }) => {
+  return { showRandom:showRandom,showSelect:showSelect }
+}
+const mapDispatchToProps = {
+  setRandom,
+  setSelect
+}
+export default connect(mapStateToProps, mapDispatchToProps)(App);
