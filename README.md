@@ -1,20 +1,20 @@
-TO DO LIST
+## TO DO LIST
 
-RandomCountry
+ ## RandomCountry
 
-:white_check_mark: Get random country from api.<br />
-:white_check_mark: Create list.<br />
-Select Country.<br />
-Get country covid data.<br />
+:heavy_check_mark: Get random country from api.<br />
+:heavy_check_mark: Create list.<br />
+:hourglass_flowing_sand: Select Country.<br />
+:hourglass_flowing_sand: Get country covid data.<br />
 
-CountryInput
+## CountryInput
 
-Create select with autocomplete.<br />
-Get country name from api.<br />
-Select Country.<br />
-Get country covid data.<br />
+:hourglass_flowing_sand: Create select with autocomplete.<br />
+:hourglass_flowing_sand: Get country name from api.<br />
+:hourglass_flowing_sand: Select Country.<br />
+:hourglass_flowing_sand: Get country covid data.<br />
 
-
+<hr>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
