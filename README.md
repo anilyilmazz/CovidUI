@@ -1,16 +1,18 @@
 TO DO LIST
 
 RandomCountry
-Get random country from api.
-Create list.
-Select Country.
-Get country covid data.
+
+:white_check_mark: Get random country from api.<br />
+:white_check_mark: Create list.<br />
+Select Country.<br />
+Get country covid data.<br />
 
 CountryInput
-Create select with autocomplete.
-Get country name from api.
-Select Country.
-Get country covid data.
+
+Create select with autocomplete.<br />
+Get country name from api.<br />
+Select Country.<br />
+Get country covid data.<br />
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

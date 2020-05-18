@@ -1,6 +1,9 @@
 import { combineReducers } from 'redux'
 import AppReducer from './appreducer'
+import RandomCountryReducer from './randomcountryreducer'
+
 
 export default combineReducers({
-    appState : AppReducer
+    appState : AppReducer,
+    randomCountryState : RandomCountryReducer
 })

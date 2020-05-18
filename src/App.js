@@ -9,16 +9,19 @@ function App({ showRandom, showSelect, setRandom, setSelect }) {
   return (
     <div className="main">
       <section className="selectDiv">
-        <button className="btn btn-primary" onClick={setRandom}>Search With Input</button> &nbsp;
-        <button className="btn btn-success" onClick={setSelect}>Random Country</button>
+        <button className="btn btn-primary" onClick={setSelect}>Search With Input</button> &nbsp;
+        <button className="btn btn-success" onClick={setRandom}>Random Country</button>
       </section>
-      {showRandom ? <RandomCountry />: null}
-      {showSelect ? <CountryInput /> : null}         
+      <hr></hr>
+      <section className="componentsBody">
+        {showRandom ? <RandomCountry /> : null}
+        {showSelect ? <CountryInput /> : null}
+      </section>
     </div>
   );
 }
-const mapStateToProps = ({ appState : {showRandom, showSelect} }) => {
-  return { showRandom:showRandom,showSelect:showSelect }
+const mapStateToProps = ({ appState: { showRandom, showSelect } }) => {
+  return { showRandom: showRandom, showSelect: showSelect }
 }
 const mapDispatchToProps = {
   setRandom,
