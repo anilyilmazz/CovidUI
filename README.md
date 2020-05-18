@@ -4,8 +4,8 @@
 
 :heavy_check_mark: Get random country from api.<br />
 :heavy_check_mark: Create list.<br />
-:hourglass_flowing_sand: Select Country.<br />
-:hourglass_flowing_sand: Get country covid data.<br />
+:heavy_check_mark: Select Country.<br />
+:heavy_check_mark: Get country covid data.<br />
 
 ## CountryInput
 
